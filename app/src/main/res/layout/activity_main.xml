@@ -61,9 +61,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Estimasi Hari Ini"
+                android:layout_marginTop="10dp"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:paddingStart="15dp"
+                app:layout_constraintBottom_toTopOf="@id/garis"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
@@ -76,6 +78,7 @@
                 android:gravity="end"
                 android:paddingEnd="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/garis"
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <View
@@ -160,5 +163,34 @@
 
 
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvMelayani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Siap melayani pelanggan dengan setulus hati"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/cvEstimasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <TextView
+        android:id="@+id/tvkecewa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jangan Kecewakan Pelanggan"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMelayani"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
