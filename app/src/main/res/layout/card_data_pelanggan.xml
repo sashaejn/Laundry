@@ -38,12 +38,13 @@
 
 
         <TextView
+
             android:id="@+id/tvNama_pelanggan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:text="@string/card_pelanggan_nama"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:layout_marginStart="10dp"/>
         <TextView
             android:id="@+id/tvAlamat_pelanggan"
