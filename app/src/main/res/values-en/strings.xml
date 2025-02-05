@@ -15,4 +15,12 @@
     <string name="card_pegawai_cabang">Branch</string>
     <string name="card_pegawai_hubungi">Contact</string>
     <string name="card_pegawai_Lihat">View</string>
+    <string name="activity_tambah_pelangganjudul">ADD CUSTOMERS</string>
+    <string name="activity_tambah_pelangganNL">Name</string>
+    <string name="activity_tambah_pelangganTHnl">Enter Full Name</string>
+    <string name="activity_tambah_pelangganAlamat">Address</string>
+    <string name="activity_tambah_pelangganTHAlamat">Enter Address</string>
+    <string name="activity_tambah_pelangganNoHp">Phone Number</string>
+    <string name="activity_tambah_pelangganTHNohp">Enter Phone Number</string>
+    <string name="activity_tambah_pelangganbtsimpan">Save</string>
 </resources>

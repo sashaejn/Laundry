@@ -15,4 +15,12 @@
     <string name="card_pegawai_cabang">Cabang</string>
     <string name="card_pegawai_hubungi">Hubungi</string>
     <string name="card_pegawai_Lihat">Lihat</string>
+    <string name="activity_tambah_pelangganjudul">TAMBAH PELANGGAN</string>
+    <string name="activity_tambah_pelangganNL">Nama Lengkap</string>
+    <string name="activity_tambah_pelangganTHnl">Masukkan Nama Lengkap</string>
+    <string name="activity_tambah_pelangganAlamat">Alamat</string>
+    <string name="activity_tambah_pelangganTHAlamat">Masukkan Alamat</string>
+    <string name="activity_tambah_pelangganNoHp">No Hp Aktif</string>
+    <string name="activity_tambah_pelangganTHNohp">Masukkan Nomor Hp</string>
+    <string name="activity_tambah_pelangganbtsimpan">Simpan</string>
 </resources>
