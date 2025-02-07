@@ -10,7 +10,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.aisyah.laundry.pegawai.DataPegawai
 import com.aisyah.laundry.pelanggan.DataPelanggan
-import com.aisyah.laundry.pelanggan.TambahPelanggan
 
 
 class MainActivity : AppCompatActivity() {
@@ -41,4 +40,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+
 }

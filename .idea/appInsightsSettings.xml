@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.aisyah.laundry" />
+                  <option name="mobileSdkAppId" value="1:153514376901:android:f6e2318251c849a6b83aac" />
+                  <option name="projectId" value="laundrysha-dd04c" />
+                  <option name="projectNumber" value="153514376901" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

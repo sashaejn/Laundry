@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cvDataPelanggan"
+    android:id="@+id/cvDataLayanan"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="130dp"
     android:layout_marginTop="5dp"
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
@@ -21,11 +21,10 @@
         android:backgroundTint="#E195AB">
 
         <TextView
-            android:id="@+id/idpelanggan"
            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/card_pelanggan_id"
+            android:text="id layanan"
             android:paddingStart="10dp"
             android:gravity="center_vertical"/>
     </androidx.cardview.widget.CardView>
@@ -40,65 +39,31 @@
 
         <TextView
 
-            android:id="@+id/tvNama_pelanggan"
+            android:id="@+id/tvnamalayanan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="@string/card_pelanggan_nama"
+            android:text="nama layanan"
             android:layout_marginTop="40dp"
             android:layout_marginStart="10dp"/>
         <TextView
-            android:id="@+id/tvAlamat_pelanggan"
+            android:id="@+id/tvharga"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/card_pelanggan_alamat"
+            android:text="harga"
             android:textColor="@color/black"
             android:layout_marginTop="7dp"
             android:layout_marginStart="10dp"/>
         <TextView
-            android:id="@+id/tvNoHp_Pelanggan"
+            android:id="@+id/tvnamacabang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/card_pelanggan_nohp"
+            android:text="Nama Cabang"
             android:textColor="@color/black"
             android:layout_marginTop="7dp"
             android:layout_marginStart="10dp"/>
 
-
-
-        <LinearLayout
-            android:id="@+id/lhCardDataPelanggan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btpelangganhub"
-                android:layout_weight="1"
-                android:layout_marginStart="10dp"
-                android:layout_height="wrap_content"
-                android:layout_width="0dp"
-                android:text="@string/card_pelanggan_hubungi"
-                android:layout_marginEnd="2dp"
-                android:textColor="@color/black"
-                android:layout_margin="10dp"
-                android:backgroundTint="#E195AB"
-                android:layout_marginTop="10dp"/>
-            <Button
-                android:id="@+id/btpelangganlihat"
-                android:layout_weight="1"
-                android:layout_margin="10dp"
-                android:layout_width="0dp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:layout_height="wrap_content"
-                android:text="@string/card_pelanggan_lihat"
-                android:backgroundTint="#E195AB"
-                android:layout_marginStart="2dp"/>
-
         </LinearLayout>
-
-    </LinearLayout>
 
 
 </androidx.cardview.widget.CardView>

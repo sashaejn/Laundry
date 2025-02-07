@@ -23,4 +23,23 @@
     <string name="activity_tambah_pelangganNoHp">Phone Number</string>
     <string name="activity_tambah_pelangganTHNohp">Enter Phone Number</string>
     <string name="activity_tambah_pelangganbtsimpan">Save</string>
+    <string name="activity_tambah_pegawaijudul">ADD EMPLOYEE</string>
+    <string name="activity_tambah_pegawaiNL">Name</string>
+    <string name="activity_tambah_pegawaiAlamat">Address</string>
+    <string name="activity_tambah_pegawaiTHalamat">Enter Address</string>
+    <string name="activity_tambah_pegawaiNoHp">Phone Number</string>
+    <string name="activity_tambah_pegawaiTHnohp">Enter Phone Number</string>
+    <string name="activity_tambah_pegawaiCabang">Branch</string>
+    <string name="activity_tambah_pegawaiTHcabang">Insert Branch</string>
+    <string name="activity_tambah_pegawaiTHnl">Enter Full Name</string>
+    <string name="activity_tambah_pegawaisave">Save</string>
+    <string name="activity_tambah_layananID">Service ID</string>
+    <string name="activity_tambah_layananNama">Service Name</string>
+    <string name="activity_tambah_layananHarga">Price</string>
+    <string name="activity_tambah_layananNamaCabang">Branch Name</string>
+    <string name="_nama_pelanggan">name cannot be empty</string>
+    <string name="_alamat_pelanggan">address cannot be empty</string>
+    <string name="_noHp_pelanggan">Phone number</string>
+    <string name="sukses_simpan_pelanggan">saved succesful</string>
+    <string name="gagal_simpan_pelanggan">save unsuccecs</string>
 </resources>

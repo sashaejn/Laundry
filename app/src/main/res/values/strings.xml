@@ -22,4 +22,23 @@
     <string name="activity_tambah_pelangganNoHp">No Hp Aktif</string>
     <string name="activity_tambah_pelangganTHNohp">Masukkan Nomor Hp</string>
     <string name="activity_tambah_pelangganbtsimpan">Simpan</string>
+    <string name="activity_tambah_pegawaijudul">TAMBAH PEGAWAI</string>
+    <string name="activity_tambah_pegawaiNL">Nama Lengkap</string>
+    <string name="activity_tambah_pegawaiAlamat">Alamat</string>
+    <string name="activity_tambah_pegawaiTHalamat">Masukkan Alamat</string>
+    <string name="activity_tambah_pegawaiNoHp">No Hp Aktif</string>
+    <string name="activity_tambah_pegawaiTHnohp">Masukkan Nomer HP</string>
+    <string name="activity_tambah_pegawaiCabang">Cabang</string>
+    <string name="activity_tambah_pegawaiTHcabang">Masukkan Cabang</string>
+    <string name="activity_tambah_pegawaiTHnl">Masukkan Nama Lengkap</string>
+    <string name="activity_tambah_pegawaisave">Simpan</string>
+    <string name="activity_tambah_layananID">ID Layanan</string>
+    <string name="activity_tambah_layananNama">Nama Layanan</string>
+    <string name="activity_tambah_layananHarga">Harga</string>
+    <string name="activity_tambah_layananNamaCabang">Nama Cabang</string>
+    <string name="_nama_pelanggan">nama tidak boleh kosong</string>
+    <string name="_alamat_pelanggan">alamat tidak boleh kosong</string>
+    <string name="_noHp_pelanggan">no HP tidak boleh kosong</string>
+    <string name="sukses_simpan_pelanggan">sukses menyimpan data pelanggan</string>
+    <string name="gagal_simpan_pelanggan">gagal menyimpan data pelanggan</string>
 </resources>
