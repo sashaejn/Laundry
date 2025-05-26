@@ -60,12 +60,12 @@
         android:text="@string/card_pegawai_alamat"
         android:textSize="20dp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@id/etalamat"
+        app:layout_constraintBottom_toTopOf="@id/etalamatpegawai"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="15dp"/>
     <EditText
-        android:id="@+id/etalamat"
+        android:id="@+id/etalamatpegawai"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -90,17 +90,18 @@
         android:layout_marginEnd="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="15dp"
-        app:layout_constraintBottom_toTopOf="@id/etNoHp"
-        app:layout_constraintTop_toBottomOf="@id/etalamat"/>
+        app:layout_constraintBottom_toTopOf="@id/etNoHppegawai"
+        app:layout_constraintTop_toBottomOf="@id/etalamatpegawai"/>
     <EditText
-        android:id="@+id/etNoHp"
+
+        android:id="@+id/etNoHppegawai"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:paddingStart="10dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        app:layout_constraintBottom_toTopOf="@id/buttonSimpan"
+        app:layout_constraintBottom_toTopOf="@id/buttonSimpanpegawai"
         app:layout_constraintEnd_toEndOf="parent"
         android:hint="@string/activity_tambah_pegawaiTHnohp"
 
@@ -109,7 +110,7 @@
         app:layout_constraintTop_toBottomOf="@id/NoHp"/>
 
     <EditText
-        android:id="@+id/etcabang"
+        android:id="@+id/etcabangpegawai"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:paddingStart="10dp"
@@ -121,7 +122,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cabang"
-        app:layout_constraintBottom_toTopOf="@id/buttonSimpan"/>
+        app:layout_constraintBottom_toTopOf="@id/buttonSimpanpegawai"/>
 
     <TextView
         android:id="@+id/cabang"
@@ -135,18 +136,18 @@
         android:layout_marginStart="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etNoHp"
-        app:layout_constraintBottom_toTopOf="@id/etcabang"/>
+        app:layout_constraintTop_toBottomOf="@id/etNoHppegawai"
+        app:layout_constraintBottom_toTopOf="@id/etcabangpegawai"/>
 
     <Button
-        android:id="@+id/buttonSimpan"
+        android:id="@+id/buttonSimpanpegawai"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:text="@string/activity_tambah_pegawaisave"
         android:backgroundTint="@color/black"
         android:layout_marginBottom="180dp"
-        app:layout_constraintTop_toBottomOf="@id/etcabang"
+        app:layout_constraintTop_toBottomOf="@id/etcabangpegawai"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

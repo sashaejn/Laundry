@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cvDataPegawai"
     android:layout_width="match_parent"
-    android:layout_height="220dp"
+    android:layout_height="wrap_content"
     android:layout_marginTop="5dp"
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
@@ -21,6 +21,7 @@
         android:backgroundTint="#E195AB">
 
         <TextView
+            android:id="@+id/idpegawai"
            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -94,6 +95,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/card_pegawai_hubungi"
                 android:layout_marginEnd="2dp"
+                android:layout_marginBottom="10dp"
                 android:textColor="@color/black"
                 android:backgroundTint="#E195AB"
                 android:layout_marginTop="10dp"/>
@@ -101,6 +103,7 @@
                 android:id="@+id/btpegawailihat"
                 android:layout_width="190dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:text="@string/card_pegawai_Lihat"

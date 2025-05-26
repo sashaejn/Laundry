@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,8 +15,27 @@
         android:theme="@style/Theme.Laundry"
         tools:targetApi="31">
         <activity
+            android:name=".pilihLayanan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".pilihPelanggan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Transaksi.Transaksi"
+            android:exported="false" />
+        <activity
+            android:name=".login_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Tambahan.TambahLayananTambahan"
+            android:exported="false" />
+
+        <activity
             android:name=".layanan.TambahLayanan"
             android:exported="false" />
+        <activity android:name=".Tambahan.DataTambahan"
+            android:exported="false" />
+
         <activity
             android:name=".layanan.DataLayanan"
             android:exported="false" />
@@ -42,4 +61,5 @@
             </intent-filter>
         </activity>
     </application>
-    </manifest>
+
+</manifest>

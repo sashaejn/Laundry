@@ -7,4 +7,125 @@
     android:layout_height="match_parent"
     tools:context=".layanan.TambahLayanan">
 
+    <TextView
+        android:id="@+id/tambahlayanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/activity_tambah_layananjudul"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/namalayanan"/>
+    <TextView
+        android:id="@+id/namalayanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_tambah_layanannamalayanan"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tambahlayanan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etnamalayanan"/>
+    <EditText
+        android:id="@+id/etnamalayanan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="@string/activity_tambah_layananetnamalayanan"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namalayanan"
+        app:layout_constraintBottom_toTopOf="@id/hargalayanan"/>
+
+
+    <TextView
+        android:id="@+id/hargalayanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_tambah_layananHarga"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/etnamalayanan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ethargalayanan"/>
+
+    <EditText
+        android:id="@+id/ethargalayanan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="@string/activity_tambah_layananetHarga"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hargalayanan"
+        app:layout_constraintBottom_toTopOf="@id/cabang"/>
+
+
+    <TextView
+        android:id="@+id/cabang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_tambah_layananNamaCabang"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ethargalayanan"
+        app:layout_constraintBottom_toTopOf="@id/etcabanglayanan"/>
+
+    <EditText
+        android:id="@+id/etcabanglayanan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="@string/activity_tambah_layananetnamacabang"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cabang"
+        app:layout_constraintBottom_toTopOf="@id/buttonSimpanlayanan"
+        />
+
+
+
+    <Button
+        android:id="@+id/buttonSimpanlayanan"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/activity_tambah_pegawaisave"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etcabanglayanan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

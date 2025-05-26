@@ -21,7 +21,6 @@ class TambahPelanggan : AppCompatActivity() {
     lateinit var etNama: EditText
     lateinit var etAlamat:EditText
     lateinit var etNoHp : EditText
-//    lateinit var etCabang: EditText
     lateinit var btSimpan:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,10 +66,10 @@ class TambahPelanggan : AppCompatActivity() {
             return
         }
         if (noHP.isEmpty()) {
-            etNama.error = this.getString(R.string._noHp_pelanggan)
+            etNoHp.error = this.getString(R.string._noHp_pelanggan)
             Toast.makeText(this, this.getString(R.string._noHp_pelanggan), Toast.LENGTH_SHORT)
                 .show()
-            etNama.requestFocus()
+            etNoHp.requestFocus()
             return
         }
         simpan()
