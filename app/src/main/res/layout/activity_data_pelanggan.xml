@@ -7,12 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".pelanggan.DataPelanggan">
 
-   <androidx.recyclerview.widget.RecyclerView
+    <TextView
+        android:id="@+id/tvDatapelangganKosong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data belum ada"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/rvDATA_PELANGGAN"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        tools:listitem="@layout/card_data_pelanggan">
    </androidx.recyclerview.widget.RecyclerView>
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"

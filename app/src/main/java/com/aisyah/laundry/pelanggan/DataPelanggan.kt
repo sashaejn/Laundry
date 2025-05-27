@@ -2,6 +2,8 @@ package com.aisyah.laundry.pelanggan
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -19,25 +21,30 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 class DataPelanggan : AppCompatActivity() {
-    val database = FirebaseDatabase.getInstance()
-    val myRef = database.getReference("pelanggan")
-    lateinit var rvdataPelanggan: RecyclerView
-    lateinit var fabDATA_PENGGUNA_Tambah: FloatingActionButton
-    lateinit var pelangganList : ArrayList<ModelPelanggan>
+
+    private val database = FirebaseDatabase.getInstance()
+    private val myRef = database.getReference("pelanggan")
+
+    private lateinit var rvdataPelanggan: RecyclerView
+    private lateinit var fabDATA_PENGGUNA_Tambah: FloatingActionButton
+    private lateinit var pelangganList: ArrayList<ModelPelanggan>
+    private lateinit var tvDataKosong: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_data_pelanggan)
+
         init()
 
-        val layoutManager = LinearLayoutManager(this)
-        layoutManager.reverseLayout=true
-        layoutManager.stackFromEnd=true
-        rvdataPelanggan.layoutManager= layoutManager
+        val layoutManager = LinearLayoutManager(this).apply {
+            reverseLayout = true
+            stackFromEnd = true
+        }
+        rvdataPelanggan.layoutManager = layoutManager
         rvdataPelanggan.setHasFixedSize(true)
-        pelangganList = arrayListOf<ModelPelanggan>()
+
+        pelangganList = arrayListOf()
         getData()
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -46,35 +53,53 @@ class DataPelanggan : AppCompatActivity() {
             insets
         }
     }
-    fun init() {
+
+    private fun init() {
         rvdataPelanggan = findViewById(R.id.rvDATA_PELANGGAN)
-        fabDATA_PENGGUNA_Tambah= findViewById(R.id.fabDATA_PENGGUNA_Tambah)
-        fabDATA_PENGGUNA_Tambah.setOnClickListener{
-            val intent = Intent(this,TambahPelanggan::class.java)
+        fabDATA_PENGGUNA_Tambah = findViewById(R.id.fabDATA_PENGGUNA_Tambah)
+        tvDataKosong = findViewById(R.id.tvDatapelangganKosong) // Pastikan ini ada di layout XML
+
+        fabDATA_PENGGUNA_Tambah.setOnClickListener {
+            val intent = Intent(this, TambahPelanggan::class.java)
             startActivity(intent)
         }
     }
-    fun getData(){
+
+    private fun getData() {
         val query = myRef.orderByChild("idPelanggan").limitToLast(100)
         query.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot){
-                if(snapshot.exists()){
-                    pelangganList.clear()
-                    for(dataSnapshot in snapshot.children){
-                        val pegawai = dataSnapshot.getValue(ModelPelanggan::class.java)
-                        pelangganList.add(pegawai!!)
+            override fun onDataChange(snapshot: DataSnapshot) {
+                pelangganList.clear()
+                if (snapshot.exists()) {
+                    for (dataSnapshot in snapshot.children) {
+                        val pelanggan = dataSnapshot.getValue(ModelPelanggan::class.java)
+                        if (pelanggan != null) {
+                            pelangganList.add(pelanggan)
+                        }
                     }
-                    val adapter = DataPelangganAdapter(pelangganList)
-                    rvdataPelanggan.adapter = adapter
-                    adapter.notifyDataSetChanged()
+
+                    if (pelangganList.isEmpty()) {
+                        tvDataKosong.visibility = View.VISIBLE
+                        rvdataPelanggan.visibility = View.GONE
+                    } else {
+                        tvDataKosong.visibility = View.GONE
+                        rvdataPelanggan.visibility = View.VISIBLE
+
+                        val adapter = DataPelangganAdapter(pelangganList)
+                        rvdataPelanggan.adapter = adapter
+                        adapter.notifyDataSetChanged()
+                    }
+
+                } else {
+                    // Tidak ada data
+                    tvDataKosong.visibility = View.VISIBLE
+                    rvdataPelanggan.visibility = View.GONE
                 }
             }
 
-            override fun onCancelled(error: DatabaseError){
-                Toast.makeText(this@DataPelanggan, error.message,Toast.LENGTH_SHORT).show()
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(this@DataPelanggan, error.message, Toast.LENGTH_SHORT).show()
             }
         })
     }
-
-
-    }
+}
