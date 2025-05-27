@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvDataitemtambahan"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="#F3D0D7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:backgroundTint="#E195AB">
+
+            <TextView
+                android:id="@+id/iditemtambahan"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="id layanan"
+                android:paddingStart="10dp"
+                android:gravity="center_vertical" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Kontainer horizontal untuk nama dan ikon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/tvnamaitemtambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="nama layanan" />
+
+                <TextView
+                    android:id="@+id/tvhargaitemtambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="harga"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/hapuslayanan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/trash"
+                android:contentDescription="Hapus item" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+

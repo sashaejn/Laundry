@@ -17,6 +17,11 @@
         <activity
             android:name=".pilihLayanan_Activity"
             android:exported="false" />
+
+        <activity
+            android:name=".pilihTambahan_Activity"
+            android:exported="false" />
+
         <activity
             android:name=".pilihPelanggan_Activity"
             android:exported="false" />
