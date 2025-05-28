@@ -45,12 +45,8 @@ class DataPilihTambahanAdapter (
         val nomor = position + 1
         val item = filteredList[position]
         val formatter = NumberFormat.getNumberInstance(Locale("in", "ID"))
-        val hargaNumber = item.hargaTambahan
-            ?.replace(".", "")
-            ?.replace(",", "")
-            ?.trim()
-            ?.toIntOrNull() ?: 0
-        val hargaFormatted = "Rp ${formatter.format(hargaNumber)}"
+        val hargaFormatted = "Rp ${formatter.format(item.hargaTambahan ?: 0)}"
+
 
         holder.tvID.text = "ID: ${item.idTambahan ?: "-"}"
         holder.tvNama.text = item.namaTambahan ?: "-"

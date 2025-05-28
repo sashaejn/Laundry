@@ -19,6 +19,11 @@
             android:exported="false" />
 
         <activity
+            android:name=".Transaksi.KonfirmasiData"
+            android:exported="false"
+            />
+
+        <activity
             android:name=".pilihTambahan_Activity"
             android:exported="false" />
 

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvKonvirmasidata_tambahan"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="#F3D0D7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:backgroundTint="#E195AB">
+
+            <TextView
+                android:id="@+id/idKDtambahan"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="id kd"
+                android:paddingStart="10dp"
+                android:gravity="center_vertical" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Baris konten -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <!-- Nama layanan -->
+            <TextView
+                android:id="@+id/tvnamatambahanKD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="nama layanan"
+                android:textColor="@color/black" />
+
+            <!-- Harga layanan -->
+            <TextView
+                android:id="@+id/tvhargatambahanKD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="harga"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
