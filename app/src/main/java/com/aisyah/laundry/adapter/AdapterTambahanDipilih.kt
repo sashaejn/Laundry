@@ -30,7 +30,8 @@ class AdapterTambahanDipilih(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = list[position]
 
-        holder.tvID.text = item.idTambahan ?: "-"
+        holder.tvID.text = "[${position + 1}]"
+
         holder.tvNama.text = item.namaTambahan ?: "-"
         holder.tvHarga.text = item.hargaTambahan?.toString() ?: "0"
 

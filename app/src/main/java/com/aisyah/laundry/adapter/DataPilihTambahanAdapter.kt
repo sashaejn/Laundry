@@ -48,7 +48,8 @@ class DataPilihTambahanAdapter (
         val hargaFormatted = "Rp ${formatter.format(item.hargaTambahan ?: 0)}"
 
 
-        holder.tvID.text = "ID: ${item.idTambahan ?: "-"}"
+        holder.tvID.text = "[${position + 1}]"
+
         holder.tvNama.text = item.namaTambahan ?: "-"
         holder.tvHarga.text = hargaFormatted
 

@@ -9,7 +9,7 @@
         android:id="@+id/cvkonfirmasi_data"
         android:layout_width="match_parent"
         android:layout_height="260dp"
-        android:backgroundTint="#FFF2F4"
+        android:backgroundTint="#F8E3E8"
         app:layout_constraintBottom_toTopOf="@id/nsvKonfirmasiData"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +97,7 @@
     </androidx.core.widget.NestedScrollView>
 
     <androidx.cardview.widget.CardView
-        android:backgroundTint="#FFF2F4"
+        android:backgroundTint="#F8E3E8"
         android:id="@+id/cvbuttonkonfirmasi"
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -127,18 +127,19 @@
 
             <!-- Dua Tombol -->
             <LinearLayout
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:layout_gravity="center">
 
                 <Button
                     android:id="@+id/btbatalKD"
                     android:layout_marginTop="10dp"
                     android:layout_width="170dp"
-                    android:layout_marginEnd="2dp"
                     android:backgroundTint="@color/black"
                     android:layout_height="48dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="5dp"
                     android:text="Batal" />
 
@@ -146,10 +147,10 @@
                     android:id="@+id/btpembayaranKD"
                     android:layout_marginTop="10dp"
                     android:layout_width="170dp"
+                    android:layout_marginBottom="5dp"
                     android:layout_marginStart="2dp"
                     android:backgroundTint="@color/black"
                     android:layout_height="48dp"
-                    android:layout_marginBottom="5dp"
                     android:text="Pembayaran" />
             </LinearLayout>
         </LinearLayout>

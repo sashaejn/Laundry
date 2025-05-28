@@ -23,7 +23,7 @@ class DataPelangganAdapter (
 
     override fun onBindViewHolder(holder: ViewHolder,position:Int){
         val pelanggan = listpelanggan[position]
-        holder.tvID.text = pelanggan.idPelanggan
+        holder.tvID.text = "[${position + 1}]"
         holder.tvNama.text = pelanggan.namaPelanggan
         holder.tvAlamat.text = pelanggan.alamatPelanggan
         holder.tvNoHp.text = pelanggan.noHPPelanggan
