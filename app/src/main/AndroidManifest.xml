@@ -17,6 +17,10 @@
         <activity
             android:name=".pilihLayanan_Activity"
             android:exported="false" />
+        <activity
+            android:name=".pembayaranAkhir_Activity"
+            android:exported="false" />
+
 
         <activity
             android:name=".Transaksi.KonfirmasiData"

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvpembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvpilihmetode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvpilihmetode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Metode Pembayaran"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tvpembayaran"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewpembayaran"
+       />
+
+    <View
+        android:id="@+id/viewpembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvpilihmetode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnBayarNanti"
+        />
+
+    <Button
+        android:id="@+id/btnBayarNanti"
+        android:layout_width="295dp"
+        android:layout_height="60dp"
+        android:textSize="17dp"
+        android:text="Bayar Nanti"
+        android:backgroundTint="#E52020"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewpembayaran"
+        app:layout_constraintBottom_toTopOf="@id/btnTunai"
+        />
+    <Button
+        android:id="@+id/btnTunai"
+        android:layout_width="295dp"
+        android:layout_height="60dp"
+        android:textSize="17dp"
+        android:text="Tunai"
+        android:backgroundTint="#FBA518"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBayarNanti"
+        app:layout_constraintBottom_toTopOf="@id/btnQRis"/>
+    <Button
+        android:id="@+id/btnQRis"
+        android:layout_width="295dp"
+        android:layout_height="60dp"
+        android:textSize="17dp"
+        android:text="QRis"
+        android:backgroundTint="#FE5D26"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@id/btnDana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnTunai"/>
+    <Button
+        android:id="@+id/btnDana"
+        android:layout_width="295dp"
+        android:layout_height="60dp"
+        android:textSize="17dp"
+        android:text="DANA"
+        android:backgroundTint="#03A791"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@id/btnGoPay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnQRis"/>
+    <Button
+        android:id="@+id/btnGoPay"
+        android:layout_width="295dp"
+        android:layout_height="60dp"
+        android:textSize="17dp"
+        android:text="GoPay"
+        android:backgroundTint="#399918"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@id/btnOvo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDana"/>
+    <Button
+        android:id="@+id/btnOvo"
+        android:layout_width="295dp"
+        android:layout_height="60dp"
+        android:textSize="17dp"
+        android:text="OVO"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@id/TvBatal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintTop_toBottomOf="@id/btnGoPay"/>
+
+
+    <TextView
+        android:id="@+id/TvBatal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batal"
+        android:textSize="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOvo"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
