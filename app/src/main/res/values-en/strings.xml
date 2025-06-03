@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="total_bayar">Total Payment: %1$s</string>
     <string name="app_name">Laundry</string>
     <string name="card_pelanggan_id">Customer ID</string>
     <string name="card_pelanggan_nama">Customer Name</string>
@@ -7,6 +8,10 @@
     <string name="card_pelanggan_nohp">Phone Number</string>
     <string name="card_pelanggan_hubungi">Contact</string>
     <string name="card_pelanggan_lihat">View</string>
+    <string name="greeting_morning">Good morning, %1$s</string>
+    <string name="greeting_afternoon">Good afternoon, %1$s</string>
+    <string name="greeting_evening">Good evening, %1$s</string>
+    <string name="greeting_night">Good night, %1$s</string>
     <string name="card_pegawai_id">Employee ID</string>
     <string name="card_pegawai_nama">Employee Name</string>
     <string name="card_pegawai_alamat">Address</string>
@@ -77,4 +82,32 @@
     <string name="activity_tambah_pegawaisunting">Edit</string>
     <string name="pegawai_tambah">Add Employess</string>
     <string name="nama_tambahan">Service Name</string>
+    <string name="selamat_pagi">Good Morning Aisyah</string>
+    <string name="estimasi">Today\'s estimation</string>
+    <string name="transaksi">Transaction</string>
+    <string name="pelanggan">Customer</string>
+    <string name="laporan">Report</string>
+    <string name="melayani">Ready to serve customers with sincerity</string>
+    <string name="kecewa">Don\'t disappoint the customers</string>
+    <string name="Akun">Account</string>
+    <string name="Layanan">Service</string>
+    <string name="Tambahan">Additional</string>
+    <string name="Pegawai">Employee</string>
+    <string name="Cabang">Branch</string>
+    <string name="Printer">Printer</string>
+    <string name="DataPelanggan">Customer Data</string>
+    <string name="NamaPelanggan">Customer Name</string>
+    <string name="NoHP">Phone Number</string>
+    <string name="PilihPelanggan">Select Customer</string>
+    <string name="LayananUtama">Main Services</string>
+    <string name="NamaLayanan">Service Name</string>
+    <string name="Harga">Price</string>
+    <string name="PilihLayanan">Select Service</string>
+    <string name="LayananTambahan">Additional Services</string>
+    <string name="Tambah">Add</string>
+    <string name="Proses">Process</string>
+    <string name="KonfirmasiData">Data Confirmation</string>
+    <string name="Nama">Name</string>
+    <string name="Batal">Cancel</string>
+    <string name="Pembayaran">Payment</string>
 </resources>

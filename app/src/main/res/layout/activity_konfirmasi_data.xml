@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Konfirmasi Data"
+                android:text="@string/KonfirmasiData"
                 android:textSize="35dp"
                 android:textStyle="bold"
                 android:textAlignment="center"/>
@@ -31,7 +31,7 @@
                 android:id="@+id/namakonfirmasi_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nama"
+                android:text="@string/Nama"
                 android:layout_marginTop="10dp"
                 android:textSize="23dp"
                 android:layout_marginStart="10dp"
@@ -41,7 +41,7 @@
                 android:id="@+id/nohpkonfirmasi_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="No HP"
+                android:text="@string/NoHP"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
                 android:textSize="20dp"/>
@@ -52,7 +52,7 @@
                 android:id="@+id/layanankonfirmasi_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Layanan"
+                android:text="@string/Layanan"
                 android:layout_marginTop="10dp"
                 android:textSize="23dp"
                 android:layout_marginStart="10dp"
@@ -62,7 +62,7 @@
                 android:id="@+id/hargakonfirmasi_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="harga"
+                android:text="@string/Harga"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
                 android:textSize="20dp"/>
@@ -72,7 +72,7 @@
                 android:id="@+id/tambahankonfirmasi_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Layanan Tambahan"
+                android:text="@string/LayananTambahan"
                 android:layout_marginTop="10dp"
                 android:textSize="23dp"
                 android:layout_marginStart="10dp"
@@ -141,7 +141,7 @@
                     android:layout_height="48dp"
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="5dp"
-                    android:text="Batal" />
+                    android:text="@string/Batal" />
 
                 <Button
                     android:id="@+id/btpembayaranKD"
@@ -151,7 +151,7 @@
                     android:layout_marginStart="2dp"
                     android:backgroundTint="@color/black"
                     android:layout_height="48dp"
-                    android:text="Pembayaran" />
+                    android:text="@string/Pembayaran" />
             </LinearLayout>
         </LinearLayout>
 

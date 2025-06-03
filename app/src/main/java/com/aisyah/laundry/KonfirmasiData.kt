@@ -49,7 +49,10 @@ class KonfirmasiData : AppCompatActivity() {
         // Hitung total tambahan dan total bayar
         totalTambahan = tambahanList.sumOf { it.hargaTambahan ?: 0 }
         totalBayar = hargaLayanan + totalTambahan
-        findViewById<TextView>(R.id.tvTotalBayar).text = "Total Bayar: ${formatRupiah(totalBayar)}"
+
+        val tvTotalBayar = findViewById<TextView>(R.id.tvTotalBayar)
+        tvTotalBayar.text = getString(R.string.total_bayar, formatRupiah(totalBayar))
+
 
         // Setup RecyclerView
         val rv = findViewById<RecyclerView>(R.id.rvKonfirmasiData)

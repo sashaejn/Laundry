@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.aisyah.laundry.Tambahan.DataTambahan
 import com.aisyah.laundry.Transaksi.Transaksi
+import com.aisyah.laundry.cabang.DataCabang
 import com.aisyah.laundry.layanan.DataLayanan
 import com.aisyah.laundry.pegawai.DataPegawai
 import com.aisyah.laundry.pelanggan.DataPelanggan
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var ivTambahan: ImageView
     lateinit var tvGreeting: TextView
     lateinit var tvTanggal: TextView
+    lateinit var ivCabang: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Inisialisasi View
+        ivCabang = findViewById(R.id.ivcabang)
         ivTambahan = findViewById(R.id.ivtambahan)
         ivTransaksi = findViewById(R.id.ivTransaksi)
         ivpelanggan = findViewById(R.id.ivPelanggan)
@@ -60,6 +63,10 @@ class MainActivity : AppCompatActivity() {
         ivlayanan.setOnClickListener {
             startActivity(Intent(this, DataLayanan::class.java))
         }
+        ivCabang.setOnClickListener {
+            startActivity(Intent(this, DataCabang::class.java))
+        }
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -73,13 +80,14 @@ class MainActivity : AppCompatActivity() {
         val hour = calendar.get(Calendar.HOUR_OF_DAY)
 
         val greeting = when (hour) {
-            in 4..10 -> "Selamat Pagi, Aisyah"
-            in 11..14 -> "Selamat Siang, Aisyah"
-            in 15..17 -> "Selamat Sore, Aisyah"
-            else -> "Selamat Malam, Aisyah"
+            in 4..10 -> getString(R.string.greeting_morning, "Aisyah")
+            in 11..14 -> getString(R.string.greeting_afternoon, "Aisyah")
+            in 15..17 -> getString(R.string.greeting_evening, "Aisyah")
+            else -> getString(R.string.greeting_night, "Aisyah")
         }
 
-        val sdf = SimpleDateFormat("dd MMMM yyyy", Locale("id", "ID"))
+        val sdf = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
+
         val today = sdf.format(calendar.time)
 
         tvGreeting.text = greeting

@@ -20,8 +20,12 @@
         <activity
             android:name=".pembayaranAkhir_Activity"
             android:exported="false" />
-
-
+        <activity
+            android:name=".cabang.DataCabang"
+            android:exported="false"/>
+        <activity
+            android:name=".cabang.TambahCabang"
+            android:exported="false"/>
         <activity
             android:name=".Transaksi.KonfirmasiData"
             android:exported="false"
