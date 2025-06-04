@@ -8,7 +8,7 @@
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
     app:cardCornerRadius="20dp"
-    android:backgroundTint="#F3D0D7">
+    android:backgroundTint="@color/CardDasar">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,14 +18,14 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="33dp"
-            android:backgroundTint="#E195AB">
+            android:backgroundTint="@color/CardPoni">
 
             <TextView
                 android:id="@+id/iditemtambahan"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="id layanan"
+                android:text="@string/idlayanan"
                 android:paddingStart="10dp"
                 android:gravity="center_vertical" />
         </androidx.cardview.widget.CardView>
@@ -50,13 +50,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:text="nama layanan" />
+                    android:text="@string/NamaLayanan" />
 
                 <TextView
                     android:id="@+id/tvhargaitemtambahan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="harga"
+                    android:text="@string/Harga"
                     android:textColor="@color/black"
                     android:layout_marginTop="5dp" />
             </LinearLayout>

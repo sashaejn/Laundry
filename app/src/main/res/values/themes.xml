@@ -6,4 +6,21 @@
     </style>
 
     <style name="Theme.Laundry" parent="Base.Theme.Laundry" />
+
+    <color name="background">#F8E3E8</color>
+    <color name="base">#FFFFFF</color>
+    <color name="MainText">#000000</color>
+    <color name="Button">#000000</color>
+    <color name="ButtonText">#FFFFFF</color>
+    <color name="CardPoni">#E195AB</color>
+    <color name="CardDasar">#F3D0D7</color>
+    <color name="Utama">#F3D0D7</color>
+    <color name="CardUtama">#FFEFEF</color>
+    <color name="garisUtama">#E195AB</color>
+    <color name="bgPayment">#FFFFFF</color>
+    <color name="garisPament">#121212</color>
+    <color name="pa">#FFFFFF</color>
+    <color name="buttoncard">#E195AB</color>
+    <color name="texthint">#636366</color>
+
 </resources>

@@ -8,6 +8,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewPa"
         android:layout_width="0dp"
+        android:backgroundTint="@color/pa"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toTopOf="@id/nsvpembayaranakhir"
@@ -29,6 +30,7 @@
                 android:text="Aisyah Laundry"
                 android:textStyle="bold"
                 android:textSize="24sp"
+                android:textColor="@color/MainText"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
@@ -40,6 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Solo"
+                android:textColor="@color/MainText"
                 android:textSize="16sp"
                 app:layout_constraintTop_toBottomOf="@id/namapembayaranakhir"
                 app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +70,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingStart="8dp"
-                    android:text="ID Transaksi"
+                    android:textColor="@color/MainText"
+                    android:text="@string/IDTransaksi"
                     android:textSize="16sp" />
 
                 <TextView
@@ -77,6 +81,7 @@
                     android:layout_weight="1"
                     android:paddingEnd="8dp"
                     android:text="ID12345"
+                    android:textColor="@color/MainText"
                     android:textAlignment="viewEnd"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -98,7 +103,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingStart="8dp"
-                    android:text="Tanggal"
+                    android:textColor="@color/MainText"
+                    android:text="@string/Tanggal"
                     android:textSize="16sp" />
 
 
@@ -108,6 +114,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingEnd="8dp"
+                    android:textColor="@color/MainText"
                     android:text="07:47:17"
                     android:textAlignment="viewEnd"
                     android:textSize="16sp" />
@@ -129,8 +136,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/MainText"
                     android:paddingStart="8dp"
-                    android:text="Pesanan"
+                    android:text="@string/Pesanan"
                     android:textSize="16sp" />
 
                 <TextView
@@ -140,6 +148,7 @@
                     android:layout_weight="1"
                     android:paddingEnd="8dp"
                     android:text="Cuci Kering"
+                    android:textColor="@color/MainText"
                     android:textAlignment="viewEnd"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -152,6 +161,7 @@
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toTopOf="@id/view1"
                 android:layout_marginTop="8dp"
+
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/Pesananlinear">
@@ -161,7 +171,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingStart="8dp"
-                    android:text="Karyawan"
+                    android:text="@string/Karyawan"
+                    android:textColor="@color/MainText"
                     android:textSize="16sp" />
 
                 <TextView
@@ -170,6 +181,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingEnd="8dp"
+                    android:textColor="@color/MainText"
                     android:text="Admin"
                     android:textAlignment="viewEnd"
                     android:textSize="16sp" />
@@ -180,8 +192,9 @@
                 android:id="@+id/view1"
                 android:layout_width="0dp"
                 android:layout_height="2dp"
-                android:background="@android:color/black"
+                android:backgroundTint="@color/garisPament"
                 android:layout_marginTop="12dp"
+                android:background="@android:color/black"
                 app:layout_constraintBottom_toTopOf="@id/layananlinear"
                 app:layout_constraintTop_toBottomOf="@id/Karyawanlinear"
                 app:layout_constraintStart_toStartOf="parent"
@@ -206,7 +219,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingStart="8dp"
-                    android:text="Layanan"
+                    android:textColor="@color/MainText"
+                    android:text="@string/Layanan"
                     android:textSize="20sp" />
 
                 <TextView
@@ -217,18 +231,20 @@
                     android:layout_weight="1"
                     android:paddingEnd="8dp"
                     android:text="Rp10.000"
+                    android:textColor="@color/MainText"
                     android:textAlignment="viewEnd"
                     android:textSize="20sp" />
             </LinearLayout>
 
             <!-- Garis Bawah -->
             <View
-                android:id="@+id/view2"
                 android:layout_width="0dp"
                 android:layout_height="2dp"
+                android:backgroundTint="@color/garisPament"
                 android:layout_marginTop="12dp"
-                app:layout_constraintBottom_toTopOf="@id/rincian"
                 android:background="@android:color/black"
+                android:id="@+id/view2"
+                app:layout_constraintBottom_toTopOf="@id/rincian"
                 app:layout_constraintTop_toBottomOf="@id/layananlinear"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
@@ -237,10 +253,11 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rincian Tambahan"
+                android:text="@string/RincianTambahan"
                 android:textStyle="bold"
                 android:layout_marginTop="12dp"
                 android:paddingStart="8dp"
+                android:textColor="@color/MainText"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -267,6 +284,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvBawah"
+        android:backgroundTint="@color/pa"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -303,8 +321,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingStart="8dp"
+                    android:textColor="@color/MainText"
                     android:layout_marginTop="5dp"
-                    android:text="subtotal tambahan"
+                    android:text="@string/subtotaltambahan"
                     android:textSize="16sp" />
 
                 <TextView
@@ -315,6 +334,7 @@
                     android:paddingEnd="8dp"
                     android:layout_marginTop="5dp"
                     android:text="Rp5000"
+                    android:textColor="@color/MainText"
                     android:textAlignment="viewEnd"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -335,13 +355,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textStyle="bold"
+                    android:textColor="@color/MainText"
                     android:paddingStart="8dp"
-                    android:text="total bayar"
+                    android:text="@string/totalbayar"
                     android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/subtotalharga"
                     android:layout_width="0dp"
+                    android:textColor="@color/MainText"
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -376,21 +398,23 @@
                     android:id="@+id/kirimWA"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="Kirim WhatsApp"
+                    android:text="@string/KirimWhatsApp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="30dp"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@color/Button"
+                    android:textColor="@color/ButtonText"
                     android:layout_weight="1"/>
                 <Button
                     android:id="@+id/cetak"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="Cetak"
+                    android:text="@string/Cetak"
                     android:layout_marginStart="5dp"
                     android:layout_marginBottom="30dp"
                     android:layout_marginEnd="5dp"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@color/Button"
+                    android:textColor="@color/ButtonText"
                     android:layout_weight="1"/>
             </LinearLayout>
 

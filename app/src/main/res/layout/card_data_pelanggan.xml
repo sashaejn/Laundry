@@ -8,7 +8,7 @@
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
     app:cardCornerRadius="20dp"
-    android:backgroundTint="#F3D0D7">
+    android:backgroundTint="@color/CardDasar">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="33dp"
-        android:backgroundTint="#E195AB">
+        android:backgroundTint="@color/CardPoni">
 
         <TextView
             android:id="@+id/idpelanggan"
@@ -80,9 +80,9 @@
                 android:layout_width="0dp"
                 android:text="@string/card_pelanggan_hubungi"
                 android:layout_marginEnd="2dp"
-                android:textColor="@color/black"
+                android:textColor="@color/garisPament"
                 android:layout_margin="10dp"
-                android:backgroundTint="#E195AB"
+                android:backgroundTint="@color/buttoncard"
                 android:layout_marginTop="10dp"/>
             <Button
                 android:id="@+id/btpelangganlihat"
@@ -90,10 +90,10 @@
                 android:layout_margin="10dp"
                 android:layout_width="0dp"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/black"
+                android:textColor="@color/garisPament"
+                android:backgroundTint="@color/buttoncard"
                 android:layout_height="wrap_content"
                 android:text="@string/card_pelanggan_lihat"
-                android:backgroundTint="#E195AB"
                 android:layout_marginStart="2dp"/>
 
         </LinearLayout>

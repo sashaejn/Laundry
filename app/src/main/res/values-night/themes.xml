@@ -4,4 +4,25 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+
+    <color name="background">#121212</color>
+    <color name="base">#000000</color>
+    <color name="MainText">#FFFFFF</color>
+    <color name="Button">#F8BBD0 </color>
+    <color name="ButtonText">#000000</color>
+   <color name="CardPoni"> #E195AB</color>
+    <color name="CardDasar">#C97C95</color>
+    <color name="Utama">#121212</color>
+    <color name="CardUtama">#D3AABB</color>
+    <color name="garisUtama">#2C1F23</color>
+    <color name="bgPayment">#121212</color>
+    <color name="garisPament">#FFFFFF</color>
+    <color name="pa">#121212</color>
+    <color name="buttoncard">#2C1F23</color>
+    <color name="texthint">#636366</color>
+
+
+
+
+
 </resources>

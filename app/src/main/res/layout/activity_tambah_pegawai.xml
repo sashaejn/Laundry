@@ -104,7 +104,8 @@
         app:layout_constraintBottom_toTopOf="@id/buttonSimpanpegawai"
         app:layout_constraintEnd_toEndOf="parent"
         android:hint="@string/activity_tambah_pegawaiTHnohp"
-
+        android:inputType="phone"
+        android:maxLength="16"
         android:layout_marginTop="10dp"
         android:background="@drawable/rectangle"
         app:layout_constraintTop_toBottomOf="@id/NoHp"/>

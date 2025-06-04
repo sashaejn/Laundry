@@ -67,8 +67,16 @@
             android:name=".pelanggan.TambahPelanggan"
             android:exported="false" />
         <activity
+
             android:name=".pelanggan.DataPelanggan"
             android:exported="false" />
+        <activity android:name=".pelanggan.SuntingPelanggan"
+            android:exported="false" />
+
+        <activity
+            android:name=".pegawai.SuntingPegawai"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

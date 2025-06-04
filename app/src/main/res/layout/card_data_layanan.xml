@@ -25,7 +25,7 @@
            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="id layanan"
+            android:text="@string/idlayanan"
             android:paddingStart="10dp"
             android:gravity="center_vertical"/>
     </androidx.cardview.widget.CardView>
@@ -44,14 +44,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="nama layanan"
+            android:text="@string/Layanan"
             android:layout_marginTop="40dp"
             android:layout_marginStart="10dp"/>
         <TextView
             android:id="@+id/tvhargalayanan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="harga"
+            android:text="@string/Harga"
             android:textColor="@color/black"
             android:layout_marginTop="7dp"
             android:layout_marginStart="10dp"/>
@@ -59,7 +59,7 @@
             android:id="@+id/tvnamacabanglayanan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nama Cabang"
+            android:text="@string/namacabang"
             android:textColor="@color/black"
             android:layout_marginTop="7dp"
             android:layout_marginStart="10dp"/>

@@ -111,5 +111,25 @@
     <string name="Nama">Nama</string>
     <string name="Batal">Batal</string>
     <string name="Pembayaran">Pembayaran</string>
+    <string name="PilihMetodePembayaran">Pilih Metode Pembayaran</string>
+    <string name="BayarNanti">Bayar Nanti</string>
+    <string name="Tunai">Tunai</string>
+    <string name="QRis">QRIS</string>
+    <string name="IDTransaksi">ID Transaksi</string>
+    <string name="Tanggal">Tanggal</string>
+    <string name="Pesanan">Pesanan</string>
+    <string name="Karyawan">Karyawan</string>
+    <string name="RincianTambahan">Rincian Tambahan</string>
+    <string name="subtotaltambahan">subtotal tambahan</string>
+    <string name="totalbayar">total bayar</string>
+    <string name="KirimWhatsApp">Kirim WhatsApp</string>
+    <string name="Cetak">Cetak</string>
+    <string name="Datalayanankosong">Data layanan kosong</string>
+    <string name="Datapelanggankosong">Data pelanggan kosong</string>
+    <string name="dptkosong">Data pelanggan kosong</string>
+    <string name="cp">Cari pelanggan...</string>
+    <string name="cl">Cari layanan...</string>
+    <string name="ct">Cari tambahan...</string>
+    <string name="idlayanan">id layanan</string>
 
 </resources>

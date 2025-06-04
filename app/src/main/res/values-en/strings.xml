@@ -110,4 +110,24 @@
     <string name="Nama">Name</string>
     <string name="Batal">Cancel</string>
     <string name="Pembayaran">Payment</string>
+    <string name="PilihMetodePembayaran">Choose Payment Method</string>
+    <string name="BayarNanti">Pay Later</string>
+    <string name="Tunai">Cash</string>
+    <string name="QRis">QRIS</string>
+    <string name="IDTransaksi">Transaction ID</string>
+    <string name="Tanggal">Date</string>
+    <string name="Pesanan">Order</string>
+    <string name="Karyawan">Employee</string>
+    <string name="RincianTambahan">Additional Details</string>
+    <string name="subtotaltambahan">additional subtotal</string>
+    <string name="totalbayar">total payment</string>
+    <string name="KirimWhatsApp">Send WhatsApp</string>
+    <string name="Cetak">Print</string>
+    <string name="Datalayanankosong">Empty service data</string>
+    <string name="Datapelanggankosong">Customer data is empty</string>
+    <string name="dptkosong">Customer data is empty</string>
+    <string name="cp">Search Customers</string>
+    <string name="cl">Find services...</string>
+    <string name="ct">Find more...</string>
+    <string name="idlayanan">Sevice ID</string>
 </resources>
