@@ -54,8 +54,8 @@
     <string name="activity_tambah_layananetnamacabang">Branch Name</string>
     <string name="activity_tambah_layananharga">Price</string>
     <string name="activity_tambah_layananetHarga">Price</string>
-    <string name="_cabang_layanan">Branch</string>
-    <string name="_Harga_layanan">Price</string>
+    <string name="_cabang_layanan">branches cannot be empty</string>
+    <string name="_Harga_layanan">please include price</string>
     <string name="sukses_simpan_layanan">succesful</string>
     <string name="gagal_simpan_layanan">failed</string>
     <string name="tambahcabang">Add Branch</string>
@@ -70,10 +70,10 @@
     <string name="tvAlamat_cabang">Address</string>
     <string name="tvNoHp_Cabang">Number Phone</string>
     <string name="layanancabang">Service</string>
-    <string name="_nama_cabang">Branch</string>
-    <string name="_alamat_cabang">Address</string>
-    <string name="_noHp_cabang">Phone Number</string>
-    <string name="_layanan_cabang">Service</string>
+    <string name="_nama_cabang">branches cannot be empty</string>
+    <string name="_alamat_cabang">Address cannot be empty</string>
+    <string name="_noHp_cabang">Phone cannot be empty</string>
+    <string name="_layanan_cabang">Service cannot be empty</string>
     <string name="sukses_simpan_cabang">Successful</string>
     <string name="gagal_simpan_cabang">Failed</string>
     <string name="activity_sunting_pelangganjudul">Customer Edit</string>

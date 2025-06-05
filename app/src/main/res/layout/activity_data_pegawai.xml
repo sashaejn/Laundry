@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pegawai.DataPegawai">
+    tools:context=".pegawai.DataPegawai"
+    android:background="@color/background">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvDATA_PEGAWAI"

@@ -107,7 +107,6 @@
                     android:text="@string/Tanggal"
                     android:textSize="16sp" />
 
-
                 <TextView
                     android:id="@+id/waktupembayaranPA"
                     android:layout_width="0dp"
@@ -300,6 +299,7 @@
                 android:id="@+id/view3"
                 android:layout_width="0dp"
                 android:layout_height="2dp"
+
                 android:background="@android:color/black"
                 app:layout_constraintBottom_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -310,7 +310,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="5dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/totallinear"
@@ -344,7 +344,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="5dp"
                 app:layout_constraintBottom_toTopOf="@id/buttonlinear"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -355,6 +355,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
                     android:textColor="@color/MainText"
                     android:paddingStart="8dp"
                     android:text="@string/totalbayar"
@@ -379,6 +380,7 @@
                 android:layout_height="2dp"
                 android:background="@android:color/black"
                 android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toTopOf="@id/buttonlinear"
                 app:layout_constraintTop_toBottomOf="@id/totallinear"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
