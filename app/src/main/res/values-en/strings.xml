@@ -134,4 +134,10 @@
     <string name="ltsdp">Additional services already selected</string>
     <string name="mpl">Please choose service</string>
     <string name="mpnp">Please choose customer name</string>
+    <string name="label_terdaftar">Registered: %1$s</string>
+    <string name="btn_sunting">Edit</string>
+    <string name="btn_simpan_perubahan">Save Changes</string>
+    <string name="toast_sukses_update_pegawai">Data updated successfully</string>
+    <string name="toast_gagal_update_pegawai">Failed to update data</string>
+
 </resources>

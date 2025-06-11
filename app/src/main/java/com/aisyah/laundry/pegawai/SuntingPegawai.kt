@@ -43,19 +43,19 @@ class SuntingPegawai : AppCompatActivity() {
         setFormEnabled(false)
 
         val btnSimpan = findViewById<Button>(R.id.buttonSuntingpegawai)
-        btnSimpan.text = "Sunting"
+        btnSimpan.text = getString(R.string.btn_sunting)
+
 
         btnSimpan.setOnClickListener {
             if (!isEditing) {
-                // Ubah jadi mode edit
                 isEditing = true
                 setFormEnabled(true)
-                btnSimpan.text = "Simpan Perubahan"
+                btnSimpan.text = getString(R.string.btn_simpan_perubahan)
             } else {
-                // Simpan perubahan
                 updatePegawai()
             }
         }
+
     }
 
     private fun updatePegawai() {
@@ -64,17 +64,18 @@ class SuntingPegawai : AppCompatActivity() {
             namaPegawai = etNama.text.toString(),
             alamatPegawai = etAlamat.text.toString(),
             noHPPegawai = etNoHP.text.toString(),
-            idCabang = etCabang.text.toString()
+            idCabang = etCabang.text.toString(),
+            timestamp = System.currentTimeMillis()
         )
 
         val dbRef = FirebaseDatabase.getInstance().getReference("pegawai").child(idPegawai)
         dbRef.setValue(updatedPegawai)
             .addOnSuccessListener {
-                Toast.makeText(this, "Data berhasil diperbarui", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.toast_sukses_update_pegawai), Toast.LENGTH_SHORT).show()
                 finish()
             }
             .addOnFailureListener {
-                Toast.makeText(this, "Gagal memperbarui data", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.toast_gagal_update_pegawai), Toast.LENGTH_SHORT).show()
             }
     }
     private fun setFormEnabled(enabled: Boolean) {

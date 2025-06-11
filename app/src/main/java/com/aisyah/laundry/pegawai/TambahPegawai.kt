@@ -101,7 +101,8 @@ class TambahPegawai : AppCompatActivity() {
             namaPegawai = etNama.text.toString(),
             alamatPegawai = etAlamat.text.toString(),
             noHPPegawai = etNoHp.text.toString(),
-            idCabang = etCabang.text.toString()
+            idCabang = etCabang.text.toString(),
+            timestamp = System.currentTimeMillis()
         )
 
         myRef.child(employeeId).setValue(employee)

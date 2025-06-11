@@ -135,5 +135,10 @@
     <string name="ltsdp">Layanan tambahan sudah dipilih</string>
     <string name="mpl">Mohon pilih layanan</string>
     <string name="mpnp">Mohon pilih nama pelanggan</string>
+    <string name="label_terdaftar">Terdaftar: %1$s</string>
+    <string name="btn_sunting">Sunting</string>
+    <string name="btn_simpan_perubahan">Simpan Perubahan</string>
+    <string name="toast_sukses_update_pegawai">Data berhasil diperbarui</string>
+    <string name="toast_gagal_update_pegawai">Gagal memperbarui data</string>
 
 </resources>
