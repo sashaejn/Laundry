@@ -130,4 +130,8 @@
     <string name="cl">Find services...</string>
     <string name="ct">Find more...</string>
     <string name="idlayanan">Sevice ID</string>
+    <string name="aksi_batal">Action canceled</string>
+    <string name="ltsdp">Additional services already selected</string>
+    <string name="mpl">Please choose service</string>
+    <string name="mpnp">Please choose customer name</string>
 </resources>

@@ -131,5 +131,9 @@
     <string name="cl">Cari layanan...</string>
     <string name="ct">Cari tambahan...</string>
     <string name="idlayanan">id layanan</string>
+    <string name="aksi_batal">Aksi dibatalkan</string>
+    <string name="ltsdp">Layanan tambahan sudah dipilih</string>
+    <string name="mpl">Mohon pilih layanan</string>
+    <string name="mpnp">Mohon pilih nama pelanggan</string>
 
 </resources>

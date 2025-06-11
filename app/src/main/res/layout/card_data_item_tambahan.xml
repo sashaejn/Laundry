@@ -63,11 +63,11 @@
 
             <ImageView
                 android:id="@+id/hapuslayanan"
-                android:layout_width="25dp"
+                android:layout_width="19dp"
                 android:layout_height="25dp"
                 android:layout_marginEnd="20dp"
-                android:src="@drawable/trash"
-                android:contentDescription="Hapus item" />
+                android:contentDescription="Hapus item"
+                android:src="@drawable/trash" />
         </LinearLayout>
     </LinearLayout>
 
